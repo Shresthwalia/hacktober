@@ -1,4 +1,4 @@
-// A Quick implementation of BFS using 
+// A simple implementation of BFS using 
 // vectors and queue 
 #include <bits/stdc++.h> 
 #define pb push_back 
@@ -25,13 +25,13 @@ void bfs(int u)
   
     while (!q.empty()) { 
   
-        int f = q.front(); 
+        int node = q.front(); 
         q.pop(); 
   
-        cout << f << " "; 
+        cout << node << " "; 
   
         // Enqueue all adjacent of f and mark them visited  
-        for (auto i = g[f].begin(); i != g[f].end(); i++) { 
+        for (auto i = g[node].begin(); i != g[node].end(); i++) { 
             if (!v[*i]) { 
                 q.push(*i); 
                 v[*i] = true; 
