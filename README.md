@@ -1,2 +1,2 @@
-# hacktober
-This repo is for hactoberfest2020.
+# hacktoberfest
+This repo is for hactoberfest2021.
